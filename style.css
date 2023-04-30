@@ -1,0 +1,421 @@
+
+body {
+  background-color: #8bd3dd;
+ 
+}
+main{
+  background-color: #abd1c6;
+  padding-bottom: 50px;
+}
+html {
+  scroll-behavior: smooth;
+}
+#web-box {
+  background-color: #004643;
+  width: 900px;
+  margin-left: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  display: inline-block;
+}
+.portafolio{
+  color: #fffffe;
+  font-family: 'Poppins', sans-serif;
+  font-size: 40px;
+  padding-left: 380px;
+  padding-top: 0px;
+  margin-top: 0px;
+  display: inline-block;
+  
+}
+
+.name_label{
+  color: #fffffe;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding-left: 50px;
+ font-size: 53px;
+ width: -10px;
+ text-align: center;
+ display: block;
+}
+.description-box{
+  margin-left: 60px;
+  margin-top: 40px;
+}
+.grid-description{
+  display: grid;
+  grid-template-columns: 400px 200px;
+  column-gap: 90px;
+}
+.description{
+  color: #abd1c6;
+  font-family: 'Poppins', sans-serif;
+  font-size:20px;
+  text-align: justify;
+}
+
+.perfil{
+  width: 150%;
+  padding-bottom: 30px;
+  border-radius: 60px;
+}
+
+.menu_buttons{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-top: 30px;
+  color: #001e1d;
+  
+}
+
+.contact-button{
+  background-color: #f9bc60;
+  color: #001e1d;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 0px;
+  margin-left: 650px;
+  border-radius: 15px;
+  padding: 12px 30px;
+  font-weight: bold;
+  display: inline-block;
+  
+}
+.text-button{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin-top: 60px;
+  color: #001e1d;
+}
+
+.about-button {
+  
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 80px;
+  border-radius: 15px;
+  border: none;
+  width: 150px;
+  color: #001e1d;
+  background-color: #f9bc60;
+  padding: 10px 10px;
+}
+.menu_buttons button{
+  font-family: 'Poppins', sans-serif;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-right: 60px;
+  border-radius: 15px;
+  width: 150px;
+  background-color: #f9bc60;
+  padding: 10px 10px;
+  border: none;
+}
+
+#videogames,#art,#web{
+  font-size: 20px;
+  margin-left: 110px;
+  margin-top: 50px;
+  
+}
+
+
+#AboutMe{
+  font-size: 20px;
+  margin-left: 80px;
+  margin-top: 50px;
+}
+
+#contact{
+  font-size: 20px;
+  margin-left: 110px;
+  margin-top: 50px;
+}
+
+.role{
+  margin-top: 10px;
+  font-size:  18px;
+  margin-bottom: 0px;
+  font-weight: bold;
+  color: #fffffe;
+}
+.role_tag{
+  font-family: 'Poppins', sans-serif;
+  
+  margin-top: 5px;
+  font-size:  14px;
+  margin-bottom: 5px;
+  color: #fffffe;
+}
+
+
+.app-box {
+  width: 650px;
+  
+  background-color: #004643;
+  border: none;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px;
+  
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.grid-a{
+ display: grid;
+ grid-template-columns: 390px 210px;
+ column-gap: 15px;
+ row-gap: 35px;
+ 
+}
+
+.grid-b{
+  display: grid;
+  grid-template-columns: 390px 200px;
+
+ }
+.poster{
+  width: 100%;
+  height: 105%;
+  border-radius: 15px;
+  filter: drop-shadow(4px 4px 6px rgba(14, 149, 102, 0.3));
+  transition: transform 0.5s;
+}
+.poster-oniria{
+  width: 130%;
+  margin-left:-20px;
+  margin-top: 25px;
+  transition: transform 0.5s;
+}
+.poster-sk8{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  transition: transform 0.5s;
+}
+.poster:hover {
+  transform: scale(0.9);
+}
+.poster-oniria:hover{
+  transform: scale(0.9);
+}
+.poster-sk8:hover{
+  transform: scale(0.9);
+}
+/* Estilos para el título */
+.app-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  color: #fffffe;
+  
+}
+.app-3Dtitle{
+  font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  margin-bottom: 5px;
+  margin-top: 0px;
+  margin-left: 250px;
+  display: inline-block;
+  color: #fffffe;
+}
+
+/* Estilos para la descripción */
+.app-description {
+  font-family: 'Poppins', sans-serif;
+  color: #abd1c6;
+   font-weight: bolder;
+  font-size: 14px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  padding-right: 10px;
+  text-align: justify;
+  
+}
+
+/* Estilos para el botón */
+.app-button,.app-video {
+  font-family: 'Poppins', sans-serif;
+  padding: 10px 20px;
+  background-color: #f9bc60;
+  color: #001e1d;
+  font-size: 14px;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  margin-right: 20px;
+ font-weight: bold;
+
+}
+
+
+
+.GameType{
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  margin-top: -35px;
+  margin-left: 180px;
+  color: #fffffe;
+ 
+}
+.vr_tag{
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  margin-top: -35px;
+  margin-left: 80px;
+  color: #fffffe;
+}
+
+.pc_tag{
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  margin-top: -35px;
+  margin-left: 60px;
+  color: #fffffe;
+}
+.videogames-title{
+  font-family: 'Poppins', sans-serif;
+  padding-top: 30px;
+  
+}
+
+.about_title{
+  font-family: 'Poppins', sans-serif;
+  margin-left: 280px;
+  color: #fffffe;
+}
+.about_description{
+  font-family: 'Poppins', sans-serif;
+  margin-right: 170px;
+  width: 800px;
+  text-align: justify;
+  color: #abd1c6;
+  font-weight: bold;
+}
+.about_acknow{
+  font-family: 'Poppins', sans-serif;
+  margin-left: 230px;
+  color: #fffffe;
+}
+.about_tools{
+  font-family: 'Poppins', sans-serif;
+  margin-left: 330px;
+  color: #fffffe;
+}
+.about_tecnical{
+  font-family: 'Poppins', sans-serif;
+  margin-left: 220px;
+  color: #fffffe;
+}
+.about_name{
+  font-family: 'Poppins', sans-serif;
+  margin-left: 200px;
+  font-weight: bold;
+  color: #f9bc60;
+}
+.experience_description{
+  font-family: 'Poppins', sans-serif;
+  margin-left: 140px;
+  color: #abd1c6;
+  font-weight: bold;
+}
+
+.mail-Text{
+  font-family: 'Poppins', sans-serif;
+  margin-left: 280px;
+  font-weight: bold;
+  color: #abd1c6;
+  margin-bottom: 20px;
+  display: block;
+}
+.cel-Text{
+  font-family: 'Poppins', sans-serif;
+  margin-left: 280px;
+  color: #abd1c6;
+  margin-bottom: 100px;
+  font-weight: bold;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  font-size: 18px;
+  
+}
+.dev-text{
+  font-family: 'Poppins', sans-serif;
+  color: #abd1c6;
+  font-weight: bold;
+}
+.item {
+  font-family: 'Poppins', sans-serif;
+  padding: 10px;
+  border-radius: 5px;
+  color: #abd1c6;
+  font-weight: bold;
+}
+
+.poster-temafroggo{
+  width: 400px;
+  margin-left: 170px;
+  border-radius: 15px;
+  transition: transform 0.5s;
+}
+
+.poster-temafroggo:hover{
+  transform:scale(1.5);
+}
+
+#video-container {
+  
+  display: none;
+}
+
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-item {
+  width: 10%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-left: 60px;
+}
+
+.image-item img {
+  width: 80%;
+}
+
+.image-item p {
+  margin-top: 5px;
+  font-size: 14px;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  color: #abd1c6;
+  font-weight: bold;
+}
+
+.icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  margin-left:220px;
+}
+
+.icon-item{
+  width: 15%;
+  padding: 10px;
+  box-sizing: border-box;
+  margin-left: 60px;
+  
+}
+
+.icon-item img {
+  width: 50%;
+}
+
