@@ -1,97 +1,84 @@
-
 body {
-  background-color: #8bd3dd;
- 
+  background-color: #0077b6; /* Azul litoral */
 }
-main{
-  background-color: #abd1c6;
+main {
+  background-color: #48cae4; /* Azul más claro */
   padding-bottom: 50px;
 }
 html {
   scroll-behavior: smooth;
 }
 #web-box {
-  background-color: #004643;
+  background-color: #023e8a; /* Azul profundo */
   width: 900px;
   margin-left: 300px;
   border-radius: 10px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
   display: inline-block;
 }
-.portafolio{
-  color: #fffffe;
+.portafolio {
+  color: #f5f5f5;
   font-family: 'Poppins', sans-serif;
   font-size: 40px;
   padding-left: 380px;
   padding-top: 0px;
   margin-top: 0px;
   display: inline-block;
-  
 }
-
-.name_label{
-  color: #fffffe;
+.name_label {
+  color: #f5f5f5;
   font-family: 'Poppins', sans-serif;
   margin-top: 20px;
   margin-bottom: 0px;
   padding-left: 50px;
- font-size: 53px;
- width: -10px;
- text-align: center;
- display: block;
+  font-size: 53px;
+  text-align: center;
+  display: block;
 }
-.description-box{
+.description-box {
   margin-left: 60px;
   margin-top: 40px;
 }
-.grid-description{
+.grid-description {
   display: grid;
   grid-template-columns: 400px 200px;
   column-gap: 90px;
 }
-.description{
-  color: #abd1c6;
+.description {
+  color: #f5f5f5;
   font-family: 'Poppins', sans-serif;
-  font-size:20px;
+  font-size: 20px;
   text-align: justify;
 }
-
-.perfil{
+.perfil {
   width: 150%;
   padding-bottom: 30px;
   border-radius: 60px;
 }
-
-.menu_buttons{
+.menu_buttons {
   font-family: 'Poppins', sans-serif;
   text-align: center;
   margin-top: 30px;
   color: #001e1d;
-  
 }
-
-.contact-button{
-  background-color: #f9bc60;
+.contact-button {
+  background-color: #00b4d8; /* Azul acento */
   color: #001e1d;
   border: none;
   font-family: 'Poppins', sans-serif;
-  margin-top: 0px;
   margin-left: 650px;
   border-radius: 15px;
   padding: 12px 30px;
   font-weight: bold;
   display: inline-block;
-  
 }
-.text-button{
+.text-button {
   font-family: 'Poppins', sans-serif;
   text-align: center;
   margin-top: 60px;
   color: #001e1d;
 }
-
 .about-button {
-  
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
   margin-top: 10px;
@@ -100,331 +87,226 @@ html {
   border: none;
   width: 150px;
   color: #001e1d;
-  background-color: #f9bc60;
+  background-color: #00b4d8;
   padding: 10px 10px;
 }
-.menu_buttons button{
+.menu_buttons button {
   font-family: 'Poppins', sans-serif;
   font-weight: bold;
-  margin-top: 0px;
   margin-right: 60px;
   border-radius: 15px;
   width: 150px;
-  background-color: #f9bc60;
+  background-color: #00b4d8;
   padding: 10px 10px;
   border: none;
 }
-
-#videogames,#art,#web{
+#videogames, #art, #web {
   font-size: 20px;
   margin-left: 110px;
   margin-top: 50px;
-  
 }
-
-
-#AboutMe{
+#AboutMe {
   font-size: 20px;
   margin-left: 80px;
   margin-top: 50px;
 }
-
-#contact{
+#contact {
   font-size: 20px;
   margin-left: 110px;
   margin-top: 50px;
 }
-
-.role{
+.role {
   margin-top: 10px;
-  font-size:  18px;
+  font-size: 18px;
   margin-bottom: 0px;
   font-weight: bold;
-  color: #fffffe;
+  color: #f5f5f5;
 }
-.role_tag{
+.role_tag {
   font-family: 'Poppins', sans-serif;
-  
   margin-top: 5px;
-  font-size:  14px;
+  font-size: 14px;
   margin-bottom: 5px;
-  color: #fffffe;
+  color: #f5f5f5;
 }
-
-
 .app-box {
   width: 650px;
-  
-  background-color: #004643;
-  border: none;
+  background-color: #023e8a;
   border-radius: 15px;
   padding: 20px;
   margin: 20px;
-  
   vertical-align: top;
   box-sizing: border-box;
 }
-
-.grid-a{
- display: grid;
- grid-template-columns: 390px 210px;
- column-gap: 15px;
- row-gap: 35px;
- 
+.grid-a {
+  display: grid;
+  grid-template-columns: 390px 210px;
+  column-gap: 15px;
+  row-gap: 35px;
 }
-
-.grid-b{
+.grid-b {
   display: grid;
   grid-template-columns: 390px 200px;
-
- }
-.poster{
+}
+.poster {
   width: 100%;
   height: 105%;
   border-radius: 15px;
-  filter: drop-shadow(4px 4px 6px rgba(14, 149, 102, 0.3));
+  filter: drop-shadow(4px 4px 6px rgba(0, 119, 182, 0.3));
   transition: transform 0.5s;
 }
-.poster-oniria{
+.poster-oniria, .poster-sk8 {
+  transition: transform 0.5s;
+}
+.poster-oniria {
   width: 130%;
-  margin-left:-20px;
+  margin-left: -20px;
   margin-top: 25px;
-  transition: transform 0.5s;
 }
-.poster-sk8{
+.poster-sk8 {
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  transition: transform 0.5s;
 }
-.poster:hover {
+.poster:hover, .poster-oniria:hover, .poster-sk8:hover {
   transform: scale(0.9);
 }
-.poster-oniria:hover{
-  transform: scale(0.9);
-}
-.poster-sk8:hover{
-  transform: scale(0.9);
-}
-/* Estilos para el título */
-.app-title {
+.app-title, .app-3Dtitle, .app-audio {
   font-family: 'Poppins', sans-serif;
   font-size: 24px;
-  margin-bottom: 5px;
-  margin-top: 0px;
-  color: #fffffe;
-  
+  margin: 0 0 5px;
+  color: #f5f5f5;
 }
-.app-3Dtitle{
-  font-family: 'Poppins', sans-serif;
-  font-size: 24px;
-  margin-bottom: 5px;
-  margin-top: 0px;
+.app-3Dtitle {
   margin-left: 250px;
   display: inline-block;
-  color: #fffffe;
 }
-.app-audio{
-  font-family: 'Poppins', sans-serif;
-  font-size: 24px;
-  margin-bottom: 5px;
-  margin-top: 0px;
+.app-audio {
   margin-left: 220px;
   display: inline-block;
-  color: #fffffe;
 }
-
-/* Estilos para la descripción */
 .app-description {
   font-family: 'Poppins', sans-serif;
-  color: #abd1c6;
-   font-weight: bolder;
+  color: #f5f5f5;
+  font-weight: bolder;
   font-size: 14px;
-  margin-bottom: 20px;
-  margin-top: 15px;
+  margin: 15px 0 20px;
   padding-right: 10px;
   text-align: justify;
-  
 }
-
-/* Estilos para el botón */
-.app-button,.app-video {
+.app-button, .app-video {
   font-family: 'Poppins', sans-serif;
   padding: 10px 20px;
-  background-color: #f9bc60;
+  background-color: #00b4d8;
   color: #001e1d;
   font-size: 14px;
   border: none;
   border-radius: 15px;
   cursor: pointer;
   margin-right: 20px;
- font-weight: bold;
-
-}
-
-
-
-.GameType{
-  font-family: 'Poppins', sans-serif;
-  font-size: 15px;
-  margin-top: -35px;
-  margin-left: 180px;
-  color: #fffffe;
- 
-}
-.vr_tag{
-  font-family: 'Poppins', sans-serif;
-  font-size: 15px;
-  margin-top: -35px;
-  margin-left: 80px;
-  color: #fffffe;
-}
-
-.pc_tag{
-  font-family: 'Poppins', sans-serif;
-  font-size: 15px;
-  margin-top: -35px;
-  margin-left: 60px;
-  color: #fffffe;
-}
-.videogames-title{
-  font-family: 'Poppins', sans-serif;
-  padding-top: 30px;
-  
-}
-
-.about_title{
-  font-family: 'Poppins', sans-serif;
-  margin-left: 280px;
-  color: #fffffe;
-}
-.about_description{
-  font-family: 'Poppins', sans-serif;
-  margin-right: 170px;
-  width: 800px;
-  text-align: justify;
-  color: #abd1c6;
   font-weight: bold;
 }
-.about_acknow{
+.GameType, .vr_tag, .pc_tag {
   font-family: 'Poppins', sans-serif;
-  margin-left: 230px;
-  color: #fffffe;
+  font-size: 15px;
+  margin-top: -35px;
+  color: #f5f5f5;
 }
-.about_tools{
+.GameType { margin-left: 180px; }
+.vr_tag { margin-left: 80px; }
+.pc_tag { margin-left: 60px; }
+.videogames-title {
   font-family: 'Poppins', sans-serif;
-  margin-left: 330px;
-  color: #fffffe;
+  padding-top: 30px;
 }
-.about_tecnical{
+.about_title, .about_acknow, .about_tools, .about_tecnical {
   font-family: 'Poppins', sans-serif;
-  margin-left: 220px;
-  color: #fffffe;
+  color: #f5f5f5;
 }
-.about_name{
+.about_title { margin-left: 280px; }
+.about_acknow { margin-left: 230px; }
+.about_tools { margin-left: 330px; }
+.about_tecnical { margin-left: 220px; }
+.about_name {
   font-family: 'Poppins', sans-serif;
   margin-left: 200px;
   font-weight: bold;
-  color: #f9bc60;
+  color: #00b4d8;
 }
-.experience_description{
+.about_description, .experience_description, .mail-Text, .cel-Text, .dev-text, .item p {
   font-family: 'Poppins', sans-serif;
+  color: #f5f5f5;
+  font-weight: bold;
+}
+.about_description {
+  margin-right: 170px;
+  width: 800px;
+  text-align: justify;
+}
+.experience_description {
   margin-left: 140px;
-  color: #abd1c6;
-  font-weight: bold;
 }
-
-.mail-Text{
-  font-family: 'Poppins', sans-serif;
+.mail-Text, .cel-Text {
   margin-left: 280px;
-  font-weight: bold;
-  color: #abd1c6;
-  margin-bottom: 20px;
-  display: block;
 }
-.cel-Text{
-  font-family: 'Poppins', sans-serif;
-  margin-left: 280px;
-  color: #abd1c6;
-  margin-bottom: 100px;
-  font-weight: bold;
-}
+.mail-Text { margin-bottom: 20px; }
+.cel-Text { margin-bottom: 100px; }
 .grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   font-size: 18px;
-  
-}
-.dev-text{
-  font-family: 'Poppins', sans-serif;
-  color: #abd1c6;
-  font-weight: bold;
 }
 .item {
   font-family: 'Poppins', sans-serif;
   padding: 10px;
   border-radius: 5px;
-  color: #abd1c6;
-  font-weight: bold;
+  color: #f5f5f5;
 }
-
-.poster-temafroggo{
+.poster-temafroggo {
   width: 400px;
   margin-left: 170px;
   border-radius: 15px;
   transition: transform 0.5s;
 }
-
-.poster-temafroggo:hover{
-  transform:scale(1.5);
+.poster-temafroggo:hover {
+  transform: scale(1.5);
 }
-
 #video-container {
-  
   display: none;
 }
-
 .image-container {
   display: flex;
   flex-wrap: wrap;
 }
-
 .image-item {
   width: 10%;
   padding: 10px;
   box-sizing: border-box;
   margin-left: 60px;
 }
-
 .image-item img {
   width: 80%;
 }
-
 .image-item p {
   margin-top: 5px;
   font-size: 14px;
   text-align: center;
   font-family: 'Poppins', sans-serif;
-  color: #abd1c6;
+  color: #f5f5f5;
   font-weight: bold;
 }
-
 .icon-container {
   display: flex;
   flex-wrap: wrap;
   margin-top: 30px;
-  margin-left:220px;
+  margin-left: 220px;
 }
-
-.icon-item{
+.icon-item {
   width: 15%;
   padding: 10px;
   box-sizing: border-box;
   margin-left: 60px;
-  
 }
-
 .icon-item img {
   width: 50%;
 }
-
