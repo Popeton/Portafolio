@@ -1,323 +1,187 @@
 :root {
-  --azul-litoral: #77D7CD;
-  --azul-profundo: #19535A;
-  --azul-complementario: #48CAE4;
-  --texto-claro: #F5F5F5;
-  --texto-oscuro: #001E1D;
-  --acento-coral: #FF6B6B;
-  --fondo-blanco: #FFFFFF;
-  --sombra-negra: rgba(0, 0, 0, 0.8);
+  --azul-fondo: #0F172A; /* Tono más oscuro y sobrio */
+  --azul-tarjeta: #1E293B; /* Contraste elegante para los proyectos */
+  --azul-acento: #48CAE4; /* Tu color original para botones y links */
+  --texto-claro: #F8FAFC;
+  --texto-secundario: #94A3B8;
+  --texto-oscuro: #020617;
+  --sombra: rgba(0, 0, 0, 0.4);
 }
 
 body {
-  background-color: var(--azul-litoral);
-}
-main {
-  background-color: var(--azul-complementario);
-  padding-bottom: 50px;
-}
-html {
+  background-color: var(--azul-fondo);
+  color: var(--texto-claro);
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
   scroll-behavior: smooth;
 }
+
+/* Contenedor principal centrado */
 #web-box {
-  background-color: var(--azul-profundo);
-  width: 900px;
-  margin-left: 300px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px var(--sombra-negra);
-  display: inline-block;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: var(--azul-fondo);
 }
-.portafolio {
-  color: var(--texto-claro);
-  font-family: 'Poppins', sans-serif;
-  font-size: 40px;
-  padding-left: 380px;
-  padding-top: 0px;
-  margin-top: 0px;
-  display: inline-block;
+
+/* Header y Navegación */
+header {
+  text-align: center;
+  margin-bottom: 60px;
 }
+
 .name_label {
-  color: var(--texto-claro);
-  font-family: 'Poppins', sans-serif;
-  margin-top: 20px;
-  margin-bottom: 0px;
-  padding-left: 50px;
-  font-size: 53px;
-  text-align: center;
-  display: block;
+  font-size: 50px;
+  margin: 0 0 10px 0;
 }
-.description-box {
-  margin-left: 60px;
-  margin-top: 40px;
+
+.portafolio {
+  font-size: 24px;
+  color: var(--azul-acento);
+  margin: 0 0 30px 0;
+  font-weight: 400;
+  letter-spacing: 2px;
 }
-.grid-description {
-  display: grid;
-  grid-template-columns: 400px 200px;
-  column-gap: 90px;
-}
-.description {
-  color: var(--texto-claro);
-  font-family: 'Poppins', sans-serif;
-  font-size: 20px;
-  text-align: justify;
-}
-.perfil {
-  width: 150%;
-  padding-bottom: 30px;
-  border-radius: 60px;
-}
+
 .menu_buttons {
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-  margin-top: 30px;
-  color: var(--texto-oscuro);
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
 }
-.contact-button {
-  background-color: var(--azul-litoral);
-  color: var(--texto-oscuro);
-  border: none;
-  font-family: 'Poppins', sans-serif;
-  margin-left: 650px;
-  border-radius: 15px;
-  padding: 12px 30px;
-  font-weight: bold;
-  display: inline-block;
-}
-.text-button {
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-  margin-top: 60px;
-  color: var(--texto-oscuro);
-}
-.about-button {
-  font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-left: 80px;
-  border-radius: 15px;
-  border: none;
-  width: 150px;
-  color: var(--texto-oscuro);
-  background-color: var(--azul-litoral);
-  padding: 10px 10px;
-}
+
 .menu_buttons button {
+  background-color: transparent;
+  color: var(--texto-claro);
+  border: 2px solid var(--azul-acento);
+  border-radius: 8px;
+  padding: 10px 24px;
   font-family: 'Poppins', sans-serif;
-  font-weight: bold;
-  margin-right: 60px;
-  border-radius: 15px;
-  width: 150px;
-  background-color: var(--azul-litoral);
-  padding: 10px 10px;
-  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
-#videogames, #art, #web {
-  font-size: 20px;
-  margin-left: 110px;
-  margin-top: 50px;
+
+.menu_buttons button:hover {
+  background-color: var(--azul-acento);
+  color: var(--texto-oscuro);
 }
-#AboutMe {
-  font-size: 20px;
-  margin-left: 80px;
-  margin-top: 50px;
+
+/* Perfil y Descripción */
+.description-box {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background-color: var(--azul-tarjeta);
+  padding: 30px;
+  border-radius: 12px;
 }
-#contact {
-  font-size: 20px;
-  margin-left: 110px;
-  margin-top: 50px;
-}
-.role {
-  margin-top: 10px;
+
+.description {
   font-size: 18px;
-  margin-bottom: 0px;
-  font-weight: bold;
-  color: var(--texto-claro);
+  line-height: 1.6;
+  text-align: left;
+  color: var(--texto-secundario);
 }
-.role_tag {
-  font-family: 'Poppins', sans-serif;
-  margin-top: 5px;
-  font-size: 14px;
-  margin-bottom: 5px;
-  color: var(--texto-claro);
+
+.perfil {
+  width: 200px;
+  border-radius: 50%;
+  border: 4px solid var(--azul-acento);
 }
+
+/* Tarjetas de Proyectos (App Box) */
+.section-title {
+  font-size: 32px;
+  border-bottom: 2px solid var(--azul-tarjeta);
+  padding-bottom: 10px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+
 .app-box {
-  width: 650px;
-  background-color: var(--azul-profundo);
-  border-radius: 15px;
-  padding: 20px;
-  margin: 20px;
-  vertical-align: top;
-  box-sizing: border-box;
+  display: flex;
+  gap: 30px;
+  background-color: var(--azul-tarjeta);
+  border-radius: 12px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 10px 20px var(--sombra);
 }
-.grid-a {
-  display: grid;
-  grid-template-columns: 390px 210px;
-  column-gap: 15px;
-  row-gap: 35px;
+
+.project-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
-.grid-b {
-  display: grid;
-  grid-template-columns: 390px 200px;
+
+.project-image-container {
+  width: 300px;
+  flex-shrink: 0;
 }
+
 .poster {
   width: 100%;
-  height: 105%;
-  border-radius: 15px;
-  filter: drop-shadow(4px 4px 6px rgba(0, 119, 182, 0.3));
-  transition: transform 0.5s;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
 }
-.poster-oniria, .poster-sk8 {
-  transition: transform 0.5s;
+
+.poster:hover {
+  transform: translateY(-5px);
 }
-.poster-oniria {
-  width: 130%;
-  margin-left: -20px;
-  margin-top: 25px;
-}
-.poster-sk8 {
-  width: 100%;
-  height: 100%;
-  border-radius: 15px;
-}
-.poster:hover, .poster-oniria:hover, .poster-sk8:hover {
-  transform: scale(0.9);
-}
-.app-title, .app-3Dtitle, .app-audio {
-  font-family: 'Poppins', sans-serif;
-  font-size: 24px;
-  margin: 0 0 5px;
+
+/* Tipografía de la Tarjeta */
+.app-title {
+  font-size: 28px;
+  margin: 0;
   color: var(--texto-claro);
 }
-.app-3Dtitle {
-  margin-left: 250px;
-  display: inline-block;
+
+.GameType {
+  font-size: 14px;
+  color: var(--azul-acento);
+  margin: 5px 0 15px 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
-.app-audio {
-  margin-left: 220px;
-  display: inline-block;
+
+.role_tag {
+  font-size: 14px;
+  color: var(--texto-secundario);
+  margin: 0 0 15px 0;
+  font-style: italic;
 }
+
 .app-description {
-  font-family: 'Poppins', sans-serif;
-  color: var(--texto-claro);
-  font-weight: bolder;
-  font-size: 14px;
-  margin: 15px 0 20px;
-  padding-right: 10px;
-  text-align: justify;
-}
-.app-button, .app-video {
-  font-family: 'Poppins', sans-serif;
-  padding: 10px 20px;
-  background-color: var(--azul-litoral);
-  color: var(--texto-oscuro);
-  font-size: 14px;
-  border: none;
-  border-radius: 15px;
-  cursor: pointer;
-  margin-right: 20px;
-  font-weight: bold;
-}
-.GameType, .vr_tag, .pc_tag {
-  font-family: 'Poppins', sans-serif;
   font-size: 15px;
-  margin-top: -35px;
+  line-height: 1.6;
   color: var(--texto-claro);
-}
-.GameType { margin-left: 180px; }
-.vr_tag { margin-left: 80px; }
-.pc_tag { margin-left: 60px; }
-.videogames-title {
-  font-family: 'Poppins', sans-serif;
-  padding-top: 30px;
-}
-.about_title, .about_acknow, .about_tools, .about_tecnical {
-  font-family: 'Poppins', sans-serif;
-  color: var(--texto-claro);
-}
-.about_title { margin-left: 280px; }
-.about_acknow { margin-left: 230px; }
-.about_tools { margin-left: 330px; }
-.about_tecnical { margin-left: 220px; }
-.about_name {
-  font-family: 'Poppins', sans-serif;
-  margin-left: 200px;
-  font-weight: bold;
-  color: var(--azul-litoral);
-}
-.about_description, .experience_description, .mail-Text, .cel-Text, .dev-text, .item p {
-  font-family: 'Poppins', sans-serif;
-  color: var(--texto-claro);
-  font-weight: bold;
-}
-.about_description {
-  margin-right: 170px;
-  width: 800px;
+  margin-bottom: 20px;
   text-align: justify;
 }
-.experience_description {
-  margin-left: 140px;
-}
-.mail-Text, .cel-Text {
-  margin-left: 280px;
-}
-.mail-Text { margin-bottom: 20px; }
-.cel-Text { margin-bottom: 100px; }
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  font-size: 18px;
-}
-.item {
-  font-family: 'Poppins', sans-serif;
-  padding: 10px;
-  border-radius: 5px;
-  color: var(--texto-claro);
-}
-.poster-temafroggo {
-  width: 400px;
-  margin-left: 170px;
-  border-radius: 15px;
-  transition: transform 0.5s;
-}
-.poster-temafroggo:hover {
-  transform: scale(1.5);
-}
-#video-container {
-  display: none;
-}
-.image-container {
+
+/* Botones de Tarjeta */
+.button-group {
+  margin-top: auto;
   display: flex;
+  gap: 10px;
   flex-wrap: wrap;
 }
-.image-item {
-  width: 10%;
-  padding: 10px;
-  box-sizing: border-box;
-  margin-left: 60px;
-}
-.image-item img {
-  width: 80%;
-}
-.image-item p {
-  margin-top: 5px;
-  font-size: 14px;
-  text-align: center;
+
+.app-button, .app-video {
+  background-color: var(--azul-acento);
+  color: var(--texto-oscuro);
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
   font-family: 'Poppins', sans-serif;
-  color: var(--texto-claro);
-  font-weight: bold;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
-.icon-container {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 30px;
-  margin-left: 220px;
-}
-.icon-item {
-  width: 15%;
-  padding: 10px;
-  box-sizing: border-box;
-  margin-left: 60px;
-}
-.icon-item img {
-  width: 50%;
+
+.app-button:hover, .app-video:hover {
+  background-color: #F8FAFC;
 }
