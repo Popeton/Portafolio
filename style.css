@@ -24,6 +24,7 @@ body {
 }
 
 #web-box {
+  position: relative;
   max-width: 1000px;
   margin: 40px auto;
   padding: 40px;
@@ -36,6 +37,7 @@ body {
 header {
   text-align: center;
   margin-bottom: 60px;
+  margin-top: 20px;
 }
 
 .name_label {
@@ -203,3 +205,42 @@ header {
 .app-button:hover, .app-video:hover {
   background-color: #F8FAFC;
 }
+
+/* =========================================
+   Language Switcher & Visibility Logic
+   ========================================= */
+.lang-switch {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  display: flex;
+  gap: 10px;
+}
+
+.lang-btn {
+  background: transparent;
+  color: var(--texto-secundario);
+  border: 1px solid var(--texto-secundario);
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.lang-btn.active {
+  background: var(--azul-acento);
+  color: var(--texto-oscuro);
+  border-color: var(--azul-acento);
+}
+
+/* 
+   State Rules: 
+   If body has 'lang-en', hide '.lang-es' elements. 
+   If body has 'lang-es', hide '.lang-en' elements.
+   Using !important guarantees layout doesn't break Flexbox structures.
+*/
+body.lang-en .lang-es { display: none !important; }
+body.lang-es .lang-en { display: none !important; }

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abraham Daguer | XR & Interactive Tech Integrator</title>
+    <title>Abraham Daguer | VR Developer & Tech Integrator</title>
     
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,27 +14,49 @@
     <link rel="stylesheet" href="style.css">
     <script src="scroll.js"></script>
 </head>
-<body>
+
+<!-- El documento carga en inglés por defecto -->
+<body class="lang-en">
     <div id="web-box">
         
+        <!-- =========================================
+             Language Switcher
+             ========================================= -->
+        <div class="lang-switch">
+            <button id="btn-en" class="lang-btn active" onclick="setLanguage('en')">ENG</button>
+            <button id="btn-es" class="lang-btn" onclick="setLanguage('es')">ESP</button>
+        </div>
+
         <!-- =========================================
              Header Section
              ========================================= -->
         <header>
             <h1 class="name_label">Abraham Daguer</h1>
-            <h2 class="portafolio">Tech Integrator & VR Developer</h2>
+            
+            <h2 class="portafolio lang-en">Tech Integrator & VR Developer</h2>
+            <h2 class="portafolio lang-es">Integrador Tecnológico y Desarrollador VR</h2>
             
             <div class="menu_buttons">
-                <button type="button" onclick="location.href='#projects'">Projects</button>
-                <button type="button" onclick="location.href='#art'">Audio & Art</button>
-                <button type="button" onclick="location.href='#AboutMe'">About Me</button>
-                <button type="button" onclick="location.href='#contact'">Contact</button>
+                <!-- English Buttons -->
+                <button type="button" class="lang-en" onclick="location.href='#projects'">Projects</button>
+                <button type="button" class="lang-en" onclick="location.href='#art'">Audio & Art</button>
+                <button type="button" class="lang-en" onclick="location.href='#AboutMe'">About Me</button>
+                <button type="button" class="lang-en" onclick="location.href='#contact'">Contact</button>
+                
+                <!-- Spanish Buttons -->
+                <button type="button" class="lang-es" onclick="location.href='#projects'">Proyectos</button>
+                <button type="button" class="lang-es" onclick="location.href='#art'">Audio y Arte</button>
+                <button type="button" class="lang-es" onclick="location.href='#AboutMe'">Sobre Mí</button>
+                <button type="button" class="lang-es" onclick="location.href='#contact'">Contacto</button>
             </div>
             
             <div class="description-box">
                 <div class="description-text">
-                    <p class="description">
-                        I am a digital entertainment design engineer specialized in creating immersive experiences and interactive hardware integrations. From scripting VR ecosystems to automating museum exhibitions, my goal is to fuse technology, education, and entertainment into seamless, high-impact solutions.
+                    <p class="description lang-en">
+                        Digital Entertainment Design Engineer and Tech Integrator specializing in immersive Virtual Reality (VR) experiences and interactive museum setups. I manage the complete project lifecycle: from Game Design Documents (GDD) and hardware selection to equipment automation and final deployment. My focus is on technical supervision, developer coordination, and translating scientific research into high-impact interactive solutions.
+                    </p>
+                    <p class="description lang-es">
+                        Ingeniero en Diseño de Entretenimiento Digital e Integrador Tecnológico especializado en experiencias inmersivas de Realidad Virtual (VR) y montajes museográficos. Gestiono el ciclo de vida completo del proyecto: desde Documentos de Diseño (GDD) y selección de hardware, hasta la automatización de equipos y el despliegue final. Mi enfoque está en la supervisión técnica, la coordinación de desarrolladores y la traducción de la investigación científica en soluciones interactivas de alto impacto.
                     </p>
                 </div>
                 <div><img class="perfil" src="Imagenes/perfil.jpg" alt="Abraham Daguer"></div>
@@ -46,15 +68,26 @@
                  Projects Section
                  ========================================= -->
             <section id="projects">
-                <h2 class="section-title">Featured Projects & Integrations</h2>
+                <h2 class="section-title lang-en">Featured Projects & Integrations</h2>
+                <h2 class="section-title lang-es">Proyectos e Integraciones Destacadas</h2>
                 
+                <!-- CCR Project -->
                 <div class="app-box">
                     <div class="project-info">
-                        <h3 class="app-title">Interactive Museum Exhibitions</h3>
-                        <span class="GameType">Hardware Integration & Automation</span>
-                        <p class="role_tag">Role: Tech Lead & Integrator</p>
-                        <p class="app-description">
-                            Technical leadership in the development and installation of interactive exhibits for cultural centers and smart tourism hubs. I managed the selection of specific museum-grade hardware, supervised developers, and implemented automation protocols (DMX, Arduino) to centrally control screens, projectors, and audio playback setups.
+                        <h3 class="app-title lang-en">Interactive Museum Exhibitions</h3>
+                        <h3 class="app-title lang-es">Exhibiciones Museográficas Interactivas</h3>
+                        
+                        <span class="GameType lang-en">Hardware Integration & Automation</span>
+                        <span class="GameType lang-es">Integración de Hardware y Automatización</span>
+                        
+                        <p class="role_tag lang-en">Role: Tech Integrator & Interactive Developer</p>
+                        <p class="role_tag lang-es">Rol: Integrador Tecnológico y Desarrollador Interactivo</p>
+                        
+                        <p class="app-description lang-en">
+                            Technical coordination and integration in the development and installation of interactive exhibits for cultural centers and smart tourism hubs. I managed the selection of specific museum-grade hardware, supervised developers, and implemented automation protocols (DMX, Arduino) to centrally control screens, projectors, and audio playback setups.
+                        </p>
+                        <p class="app-description lang-es">
+                            Coordinación técnica e integración en el desarrollo e instalación de exhibiciones interactivas para centros culturales y centros de turismo inteligente. Gestioné la selección de hardware museográfico específico, supervisé a los desarrolladores e implementé protocolos de automatización (DMX, Arduino) para controlar centralmente pantallas, proyectores y configuraciones de reproducción de audio.
                         </p>
                     </div>
                     <div class="project-image-container">
@@ -62,16 +95,27 @@
                     </div>
                 </div>
 
+                <!-- Agentes I -->
                 <div class="app-box">
                     <div class="project-info">
                         <h3 class="app-title">Agentes I</h3>
-                        <span class="GameType">Educational VideoGame</span>
-                        <p class="role_tag">Role: Unity Developer</p>
-                        <p class="app-description">
+                        
+                        <span class="GameType lang-en">Educational VideoGame</span>
+                        <span class="GameType lang-es">Videojuego Educativo</span>
+                        
+                        <p class="role_tag lang-en">Role: Unity Developer</p>
+                        <p class="role_tag lang-es">Rol: Desarrollador Unity</p>
+                        
+                        <p class="app-description lang-en">
                             Complete development of an interactive video game designed to teach children about digital security and internet citizenship. I structured the technical architecture using ScriptableObjects in Unity to optimize game data flow, and built intuitive, accessible UI components.
                         </p>
+                        <p class="app-description lang-es">
+                            Desarrollo completo de un videojuego interactivo diseñado para enseñar a los niños sobre seguridad digital y ciudadanía en internet. Estructuré la arquitectura técnica usando ScriptableObjects en Unity para optimizar el flujo de datos del juego, y construí componentes de interfaz de usuario intuitivos y accesibles.
+                        </p>
+                        
                         <div class="button-group">
-                            <button class="app-button" onclick="OpenLink(this)" value="https://www.agentesinternetseguro.com/">Web-site</button>
+                            <button class="app-button lang-en" onclick="OpenLink(this)" value="https://www.agentesinternetseguro.com/">Web-site</button>
+                            <button class="app-button lang-es" onclick="OpenLink(this)" value="https://www.agentesinternetseguro.com/">Sitio Web</button>
                         </div>
                     </div>
                     <div class="project-image-container">
@@ -79,16 +123,27 @@
                     </div>
                 </div>
 
+                <!-- Ecos de Mar -->
                 <div class="app-box">
                     <div class="project-info">
                         <h3 class="app-title">Ecos de Mar</h3>
-                        <span class="GameType">VR Experience – Environmental Narrative</span>
-                        <p class="role_tag">Role: Lead VR Developer & Integration Leader</p>
-                        <p class="app-description">
+                        
+                        <span class="GameType lang-en">VR Experience – Environmental Narrative</span>
+                        <span class="GameType lang-es">Experiencia VR – Narrativa Ambiental</span>
+                        
+                        <p class="role_tag lang-en">Role: Lead VR Developer & Integration Leader</p>
+                        <p class="role_tag lang-es">Rol: Desarrollador Principal VR y Líder de Integración</p>
+                        
+                        <p class="app-description lang-en">
                             An immersive virtual reality portal to the Caribbean Sea validated by marine biologists. Designed for Meta Quest, it features a highly realistic 3D spatial audio system where users explore mangroves and deep reefs. I led the technical development, interactions, and multidisciplinary integration.
                         </p>
+                        <p class="app-description lang-es">
+                            Un portal inmersivo de realidad virtual al Mar Caribe validado por biólogos marinos. Diseñado para Meta Quest, cuenta con un sistema de audio espacial 3D altamente realista donde los usuarios exploran manglares y arrecifes profundos. Lideré el desarrollo técnico, las interacciones y la integración multidisciplinaria.
+                        </p>
+                        
                         <div class="button-group">
-                            <button class="app-video" onclick="OpenLink(this)" value="https://www.youtube.com/watch?v=ozQI2D86ZhI">Trailer</button>
+                            <button class="app-video lang-en" onclick="OpenLink(this)" value="https://www.youtube.com/watch?v=ozQI2D86ZhI">Trailer</button>
+                            <button class="app-video lang-es" onclick="OpenLink(this)" value="https://www.youtube.com/watch?v=ozQI2D86ZhI">Tráiler</button>
                             <button class="app-button" onclick="OpenLink(this)" value="https://github.com/Popeton/EcosdeMar">GitHub</button>
                         </div>
                     </div>
@@ -97,14 +152,24 @@
                     </div>
                 </div>
 
+                <!-- Froggo Jump -->
                 <div class="app-box">
                     <div class="project-info">
                         <h3 class="app-title">Froggo Jump!</h3>
-                        <span class="GameType">Mobile Endless Jumper</span>
-                        <p class="role_tag">Role: Gameplay & UI Programmer</p>
-                        <p class="app-description">
+                        
+                        <span class="GameType lang-en">Mobile Endless Jumper</span>
+                        <span class="GameType lang-es">Endless Jumper para Móviles</span>
+                        
+                        <p class="role_tag lang-en">Role: Gameplay & UI Programmer</p>
+                        <p class="role_tag lang-es">Rol: Programador de Gameplay e Interfaz</p>
+                        
+                        <p class="app-description lang-en">
                             A fast-paced casual mobile game with competitive scoring and character customization mechanics. Jump from one platform to another dodging obstacles. Winner of the university development contest for its engaging core loop and polished UI.
                         </p>
+                        <p class="app-description lang-es">
+                            Un juego móvil casual de ritmo rápido con puntuación competitiva y mecánicas de personalización de personajes. Salta de una plataforma a otra esquivando obstáculos. Ganador del concurso universitario de desarrollo por su bucle de juego atractivo y su interfaz pulida.
+                        </p>
+                        
                         <div class="button-group">
                             <button class="app-button" onclick="OpenLink(this)" value="https://github.com/FroggoJump/froggo">GitHub</button>
                         </div>
@@ -119,13 +184,40 @@
                  Audio & Art Section
                  ========================================= -->
             <section id="art">
-                <h2 class="section-title">Audio & 3D Art</h2>
+                <h2 class="section-title lang-en">Animation & Audio Art</h2>
+                <h2 class="section-title lang-es">Animación y Arte Sonoro</h2>
                 
+                <!-- Animations Section -->
                 <div class="app-box">
                     <div class="project-info">
-                        <h3 class="app-title">Spatial Audio & Sound Design</h3>
-                        <p class="app-description">
+                        <h3 class="app-title lang-en">2D & 3D Animation</h3>
+                        <h3 class="app-title lang-es">Animación 2D y 3D</h3>
+                        
+                        <p class="app-description lang-en">
+                            Development and production of 2D and 3D animation sequences, demonstrating structural understanding of motion, pacing, and visual storytelling for digital entertainment.
+                        </p>
+                        <p class="app-description lang-es">
+                            Desarrollo y producción de secuencias de animación 2D y 3D, demostrando comprensión estructural del movimiento, ritmo y narrativa visual para el entretenimiento digital.
+                        </p>
+                    </div>
+                </div>
+                
+                <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 40px; justify-content: center;">
+                    <iframe width="440" height="250" src="https://www.youtube.com/embed/SIx0wWihORM" frameborder="0" allowfullscreen style="border-radius: 8px;"></iframe>
+                    <iframe width="440" height="250" src="https://www.youtube.com/embed/KffiToP8o6o" frameborder="0" allowfullscreen style="border-radius: 8px;"></iframe>
+                </div>
+
+                <!-- Audio Design Section -->
+                <div class="app-box">
+                    <div class="project-info">
+                        <h3 class="app-title lang-en">Spatial Audio & Sound Design</h3>
+                        <h3 class="app-title lang-es">Audio Espacial y Diseño Sonoro</h3>
+                        
+                        <p class="app-description lang-en">
                             Design and implementation of immersive 3D spatial audio for interactive experiences and virtual reality. Proficient in tools like FMOD and Reaper to create dynamic soundscapes, experimental sound effects, and multichannel audio routing that elevate user immersion.
+                        </p>
+                        <p class="app-description lang-es">
+                            Diseño e implementación de audio espacial 3D inmersivo para experiencias interactivas y realidad virtual. Competente en herramientas como FMOD y Reaper para crear paisajes sonoros dinámicos, efectos de sonido experimentales y enrutamiento de audio multicanal que elevan la inmersión del usuario.
                         </p>
                     </div>
                 </div>
@@ -143,57 +235,85 @@
              ========================================= -->
         <footer>
             <section id="AboutMe">
-                <h2 class="section-title">About Me</h2>
+                <h2 class="section-title lang-en">About Me</h2>
+                <h2 class="section-title lang-es">Sobre Mí</h2>
+                
                 <h3 class="app-title" style="margin-bottom: 15px;">Abraham David Daguer Gamero</h3>
                 
                 <div class="app-box" style="margin-bottom: 40px;">
-                    <p class="description" style="color: var(--texto-claro);">
-                        Digital Entertainment Design Engineer and Tech Integrator specializing in immersive Virtual Reality (VR) experiences and interactive museum setups. I manage the complete project lifecycle: from Game Design Documents (GDD) and hardware selection to equipment automation and final deployment. My focus is on technical leadership, developer coordination, and translating scientific research into high-impact interactive solutions.
+                    <p class="description lang-en" style="color: var(--texto-claro);">
+                        I am very interested in everything related to the world of digital entertainment such as video games, animations, series, movies, and comics, and especially the process behind them, how they are conceived, produced, and published.
+                    </p>
+                    <p class="description lang-es" style="color: var(--texto-claro);">
+                        Tengo un gran interés en todo lo relacionado con el mundo del entretenimiento digital, como videojuegos, animaciones, series, películas y cómics, y especialmente en el proceso detrás de ellos: cómo se conciben, producen y publican.
                     </p>
                 </div>
 
                 <div style="display: flex; gap: 40px; flex-wrap: wrap; margin-bottom: 40px;">
                     
                     <div style="flex: 1; min-width: 300px;">
-                        <h3 class="GameType" style="font-size: 18px;">Core Competencies</h3>
+                        <h3 class="GameType lang-en" style="font-size: 18px;">Core Competencies</h3>
+                        <h3 class="GameType lang-es" style="font-size: 18px;">Competencias Principales</h3>
                         <ul style="color: var(--texto-secundario); line-height: 1.8; font-size: 15px; padding-left: 20px;">
-                            <li><strong style="color: var(--texto-claro);">VR & Game Dev:</strong> Unity, C#, XR Interaction Toolkit, Shader Graph.</li>
-                            <li><strong style="color: var(--texto-claro);">Hardware Integration:</strong> Automation protocols, DMX, Arduino, Displays.</li>
-                            <li><strong style="color: var(--texto-claro);">Audio & 3D:</strong> FMOD, Reaper, Blender, Spatial Audio 3D.</li>
-                            <li><strong style="color: var(--texto-claro);">Project Management:</strong> Agile, Git/GitHub, QA Testing, GDD creation.</li>
+                            <li class="lang-en"><strong style="color: var(--texto-claro);">VR & Game Dev:</strong> Unity, C#, XR Interaction Toolkit, Shader Graph.</li>
+                            <li class="lang-es"><strong style="color: var(--texto-claro);">Desarrollo VR y Juegos:</strong> Unity, C#, XR Interaction Toolkit, Shader Graph.</li>
+                            
+                            <li class="lang-en"><strong style="color: var(--texto-claro);">Hardware Integration:</strong> Automation protocols, DMX, Arduino, Displays.</li>
+                            <li class="lang-es"><strong style="color: var(--texto-claro);">Integración de Hardware:</strong> Protocolos de automatización, DMX, Arduino, Pantallas.</li>
+                            
+                            <li class="lang-en"><strong style="color: var(--texto-claro);">Audio & 3D:</strong> FMOD, Reaper, Blender, Spatial Audio 3D.</li>
+                            <li class="lang-es"><strong style="color: var(--texto-claro);">Audio y 3D:</strong> FMOD, Reaper, Blender, Audio Espacial 3D.</li>
+                            
+                            <li class="lang-en"><strong style="color: var(--texto-claro);">Project Management:</strong> Agile, Git/GitHub, QA Testing, GDD creation.</li>
+                            <li class="lang-es"><strong style="color: var(--texto-claro);">Gestión de Proyectos:</strong> Agile, Git/GitHub, Pruebas QA, creación de GDD.</li>
                         </ul>
                     </div>
 
                     <div style="flex: 1; min-width: 300px;">
-                        <h3 class="GameType" style="font-size: 18px;">Experience</h3>
+                        <h3 class="GameType lang-en" style="font-size: 18px;">Experience</h3>
+                        <h3 class="GameType lang-es" style="font-size: 18px;">Experiencia</h3>
+                        
                         <div style="margin-bottom: 15px;">
-                            <strong style="color: var(--texto-claro); display: block;">Tech Integrator</strong>
+                            <strong class="lang-en" style="color: var(--texto-claro); display: block;">Tech Integrator & Interactive Developer</strong>
+                            <strong class="lang-es" style="color: var(--texto-claro); display: block;">Integrador Tecnológico y Desarrollador Interactivo</strong>
                             <span style="color: var(--texto-secundario); font-size: 14px;">Parque Explora | Nov 2025 – Sep 2026</span>
                         </div>
                         <div style="margin-bottom: 15px;">
-                            <strong style="color: var(--texto-claro); display: block;">Lead VR Developer & Young Researcher</strong>
+                            <strong class="lang-en" style="color: var(--texto-claro); display: block;">Lead VR Developer & Young Researcher</strong>
+                            <strong class="lang-es" style="color: var(--texto-claro); display: block;">Desarrollador Principal VR y Joven Investigador</strong>
                             <span style="color: var(--texto-secundario); font-size: 14px;">UPB (Alianza Biofilia) | Jul 2024 – Aug 2025</span>
                         </div>
                         <div style="margin-bottom: 15px;">
-                            <strong style="color: var(--texto-claro); display: block;">Research & IT Intern</strong>
+                            <strong class="lang-en" style="color: var(--texto-claro); display: block;">Research & IT Intern</strong>
+                            <strong class="lang-es" style="color: var(--texto-claro); display: block;">Practicante de Investigación e Informática</strong>
                             <span style="color: var(--texto-secundario); font-size: 14px;">Universidad de Córdoba | Jul 2023 – Dec 2023</span>
                         </div>
                     </div>
                 </div>
 
-                <h3 class="GameType" style="font-size: 18px;">Acknowledgments & Certifications</h3>
+                <h3 class="GameType lang-en" style="font-size: 18px;">Acknowledgments & Certifications</h3>
+                <h3 class="GameType lang-es" style="font-size: 18px;">Reconocimientos y Certificaciones</h3>
+                
                 <div class="app-box" style="padding: 20px; flex-direction: column; gap: 10px;">
-                    <p style="margin: 0; font-size: 15px;">
+                    <p class="lang-en" style="margin: 0; font-size: 15px;">
                         <strong style="color: var(--azul-acento);">Young Researcher (Alianza Biofilia):</strong> Certification in scientific dissemination and technological narratives applied to ecosystems (Parque Explora & UPB).
                     </p>
-                    <p style="margin: 0; font-size: 15px;">
+                    <p class="lang-es" style="margin: 0; font-size: 15px;">
+                        <strong style="color: var(--azul-acento);">Joven Investigador (Alianza Biofilia):</strong> Certificación en divulgación científica y diseño de narrativas tecnológicas aplicadas a ecosistemas (Parque Explora y UPB).
+                    </p>
+                    
+                    <p class="lang-en" style="margin: 0; font-size: 15px;">
                         <strong style="color: var(--azul-acento);">1st Place University Contest:</strong> Awarded best project of the semester for "Froggo Jump!" (Digital Entertainment Design Engineering, June 2022).
+                    </p>
+                    <p class="lang-es" style="margin: 0; font-size: 15px;">
+                        <strong style="color: var(--azul-acento);">1er Puesto Concurso Universitario:</strong> Premiado como el mejor proyecto del semestre por "Froggo Jump!" (Ingeniería de Diseño en Entretenimiento Digital, Junio 2022).
                     </p>
                 </div>
             </section>
 
             <section id="contact" style="text-align: center; margin-top: 60px; padding-top: 40px; border-top: 2px solid var(--azul-tarjeta);">
-                <h2 class="section-title" style="border: none; margin-top: 0;">Let's Connect</h2>
+                <h2 class="section-title lang-en" style="border: none; margin-top: 0;">Let's Connect</h2>
+                <h2 class="section-title lang-es" style="border: none; margin-top: 0;">Conectemos</h2>
                 
                 <div style="display: flex; justify-content: center; gap: 30px; margin-bottom: 30px;">
                     <a href="mailto:abrahamg1235@gmail.com" style="color: var(--texto-claro); text-decoration: none; font-size: 16px; font-weight: 600;">
