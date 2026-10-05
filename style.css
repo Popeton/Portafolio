@@ -80,15 +80,21 @@ header {
 }
 
 /* =========================================
-   Profile Description
+   Profile Description & Flexbox Rules
    ========================================= */
 .description-box {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 40px;
   background-color: var(--azul-tarjeta);
-  padding: 30px;
+  padding: 40px;
   border-radius: 12px;
+}
+
+/* Garantiza que el texto tome el espacio disponible, pero respete la imagen */
+.description-text {
+  flex: 1; 
 }
 
 .description {
@@ -96,13 +102,17 @@ header {
   line-height: 1.6;
   text-align: left;
   color: var(--texto-secundario);
+  margin: 0;
 }
 
+/* Blindaje de proporciones para la foto de perfil */
 .perfil {
   width: 250px;
   height: 250px;
+  min-width: 250px; /* Impide que Flexbox la aplaste */
+  min-height: 250px;
   object-fit: cover;
-  flex-shrink: 0; /* Evita que el contenedor aplaste la imagen */
+  flex-shrink: 0; 
   border-radius: 50%;
   border: 4px solid var(--azul-acento);
   box-shadow: 0 5px 15px rgba(0,0,0,0.3);
@@ -283,9 +293,12 @@ body.lang-es .lang-en { display: none !important; }
     padding: 20px;
   }
 
+  /* Ajuste de foto para móviles */
   .perfil {
-    width: 180px;
-    height: 180px;
+    width: 200px;
+    height: 200px;
+    min-width: 200px;
+    min-height: 200px;
   }
 
   .description {
