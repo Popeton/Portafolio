@@ -4,14 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abraham Daguer | XR & Interactive Tech Integrator</title>
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles & Scripts -->
     <link rel="stylesheet" href="style.css">
     <script src="scroll.js"></script>
 </head>
 <body>
     <div id="web-box">
+        
+        <!-- =========================================
+             Header Section
+             ========================================= -->
         <header>
             <h1 class="name_label">Abraham Daguer</h1>
             <h2 class="portafolio">Tech Integrator & VR Developer</h2>
@@ -19,6 +27,7 @@
             <div class="menu_buttons">
                 <button type="button" onclick="location.href='#projects'">Projects</button>
                 <button type="button" onclick="location.href='#art'">Audio & Art</button>
+                <button type="button" onclick="location.href='#AboutMe'">About Me</button>
                 <button type="button" onclick="location.href='#contact'">Contact</button>
             </div>
             
@@ -33,10 +42,12 @@
         </header>
 
         <main>
+            <!-- =========================================
+                 Projects Section
+                 ========================================= -->
             <section id="projects">
                 <h2 class="section-title">Featured Projects & Integrations</h2>
                 
-                <!-- PROYECTO 1: MUSEOS (NUEVO) -->
                 <div class="app-box">
                     <div class="project-info">
                         <h3 class="app-title">Interactive Museum Exhibitions</h3>
@@ -47,12 +58,10 @@
                         </p>
                     </div>
                     <div class="project-image-container">
-                        <!-- Te sugiero poner aquí una foto genérica de hardware o de un montaje de pantallas -->
                         <img class="poster" src="Imagenes/museo_setup.jpg" alt="Hardware Setup">
                     </div>
                 </div>
 
-                <!-- PROYECTO 2: AGENTES I (NUEVO) -->
                 <div class="app-box">
                     <div class="project-info">
                         <h3 class="app-title">Agentes I</h3>
@@ -66,12 +75,10 @@
                         </div>
                     </div>
                     <div class="project-image-container">
-                        <!-- Pon aquí el logo o un pantallazo del juego -->
                         <img class="poster" src="Imagenes/agentes_poster.jpg" alt="Agentes I">
                     </div>
                 </div>
 
-                <!-- PROYECTO 3: ECOS DE MAR (ACTUALIZADO) -->
                 <div class="app-box">
                     <div class="project-info">
                         <h3 class="app-title">Ecos de Mar</h3>
@@ -90,7 +97,6 @@
                     </div>
                 </div>
 
-                <!-- PROYECTO 4: FROGGO JUMP -->
                 <div class="app-box">
                     <div class="project-info">
                         <h3 class="app-title">Froggo Jump!</h3>
@@ -108,7 +114,103 @@
                     </div>
                 </div>
             </section>
+
+            <!-- =========================================
+                 Audio & Art Section
+                 ========================================= -->
+            <section id="art">
+                <h2 class="section-title">Audio & 3D Art</h2>
+                
+                <div class="app-box">
+                    <div class="project-info">
+                        <h3 class="app-title">Spatial Audio & Sound Design</h3>
+                        <p class="app-description">
+                            Design and implementation of immersive 3D spatial audio for interactive experiences and virtual reality. Proficient in tools like FMOD and Reaper to create dynamic soundscapes, experimental sound effects, and multichannel audio routing that elevate user immersion.
+                        </p>
+                    </div>
+                </div>
+                
+                <div style="display: flex; gap: 20px; flex-wrap: wrap; margin-bottom: 40px;">
+                    <iframe width="300" height="170" src="https://www.youtube.com/embed/Z0JvPWpOFPM" frameborder="0" allowfullscreen style="border-radius: 8px;"></iframe>
+                    <iframe width="300" height="170" src="https://www.youtube.com/embed/LxFzf-CLRjg" frameborder="0" allowfullscreen style="border-radius: 8px;"></iframe>
+                    <iframe width="300" height="170" src="https://www.youtube.com/embed/HW63LPffgzQ" frameborder="0" allowfullscreen style="border-radius: 8px;"></iframe>
+                </div>
+            </section>
         </main>
-    </div>
+
+        <!-- =========================================
+             Footer / About Me / Contact
+             ========================================= -->
+        <footer>
+            <section id="AboutMe">
+                <h2 class="section-title">About Me</h2>
+                <h3 class="app-title" style="margin-bottom: 15px;">Abraham David Daguer Gamero</h3>
+                
+                <div class="app-box" style="margin-bottom: 40px;">
+                    <p class="description" style="color: var(--texto-claro);">
+                        Digital Entertainment Design Engineer and Tech Integrator specializing in immersive Virtual Reality (VR) experiences and interactive museum setups. I manage the complete project lifecycle: from Game Design Documents (GDD) and hardware selection to equipment automation and final deployment. My focus is on technical leadership, developer coordination, and translating scientific research into high-impact interactive solutions.
+                    </p>
+                </div>
+
+                <div style="display: flex; gap: 40px; flex-wrap: wrap; margin-bottom: 40px;">
+                    
+                    <div style="flex: 1; min-width: 300px;">
+                        <h3 class="GameType" style="font-size: 18px;">Core Competencies</h3>
+                        <ul style="color: var(--texto-secundario); line-height: 1.8; font-size: 15px; padding-left: 20px;">
+                            <li><strong style="color: var(--texto-claro);">VR & Game Dev:</strong> Unity, C#, XR Interaction Toolkit, Shader Graph.</li>
+                            <li><strong style="color: var(--texto-claro);">Hardware Integration:</strong> Automation protocols, DMX, Arduino, Displays.</li>
+                            <li><strong style="color: var(--texto-claro);">Audio & 3D:</strong> FMOD, Reaper, Blender, Spatial Audio 3D.</li>
+                            <li><strong style="color: var(--texto-claro);">Project Management:</strong> Agile, Git/GitHub, QA Testing, GDD creation.</li>
+                        </ul>
+                    </div>
+
+                    <div style="flex: 1; min-width: 300px;">
+                        <h3 class="GameType" style="font-size: 18px;">Experience</h3>
+                        <div style="margin-bottom: 15px;">
+                            <strong style="color: var(--texto-claro); display: block;">Tech Integrator</strong>
+                            <span style="color: var(--texto-secundario); font-size: 14px;">Parque Explora | Nov 2025 – Sep 2026</span>
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <strong style="color: var(--texto-claro); display: block;">Lead VR Developer & Young Researcher</strong>
+                            <span style="color: var(--texto-secundario); font-size: 14px;">UPB (Alianza Biofilia) | Jul 2024 – Aug 2025</span>
+                        </div>
+                        <div style="margin-bottom: 15px;">
+                            <strong style="color: var(--texto-claro); display: block;">Research & IT Intern</strong>
+                            <span style="color: var(--texto-secundario); font-size: 14px;">Universidad de Córdoba | Jul 2023 – Dec 2023</span>
+                        </div>
+                    </div>
+                </div>
+
+                <h3 class="GameType" style="font-size: 18px;">Acknowledgments & Certifications</h3>
+                <div class="app-box" style="padding: 20px; flex-direction: column; gap: 10px;">
+                    <p style="margin: 0; font-size: 15px;">
+                        <strong style="color: var(--azul-acento);">Young Researcher (Alianza Biofilia):</strong> Certification in scientific dissemination and technological narratives applied to ecosystems (Parque Explora & UPB).
+                    </p>
+                    <p style="margin: 0; font-size: 15px;">
+                        <strong style="color: var(--azul-acento);">1st Place University Contest:</strong> Awarded best project of the semester for "Froggo Jump!" (Digital Entertainment Design Engineering, June 2022).
+                    </p>
+                </div>
+            </section>
+
+            <section id="contact" style="text-align: center; margin-top: 60px; padding-top: 40px; border-top: 2px solid var(--azul-tarjeta);">
+                <h2 class="section-title" style="border: none; margin-top: 0;">Let's Connect</h2>
+                
+                <div style="display: flex; justify-content: center; gap: 30px; margin-bottom: 30px;">
+                    <a href="mailto:abrahamg1235@gmail.com" style="color: var(--texto-claro); text-decoration: none; font-size: 16px; font-weight: 600;">
+                        abrahamg1235@gmail.com
+                    </a>
+                    <span style="color: var(--azul-acento);">|</span>
+                    <a href="tel:+573024178364" style="color: var(--texto-claro); text-decoration: none; font-size: 16px; font-weight: 600;">
+                        +57 3024178364
+                    </a>
+                </div>
+
+                <div class="menu_buttons">
+                    <button type="button" onclick="window.open('https://www.linkedin.com/in/abraham-daguer-37bb5720b/', '_blank')">LinkedIn</button>
+                    <button type="button" onclick="window.open('https://github.com/Popeton', '_blank')">GitHub</button>
+                </div>
+            </section>  
+        </footer> 
+    </div>  
 </body>
 </html>
